@@ -7,9 +7,10 @@ import (
 
 func main() {
 
-	http.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {
+
+	http.HandleFunc("/api/user/health", func(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusOK)
-		w.Write([]byte("OK"))
+		w.Write([]byte("USER BFF OK"))
 	})
 
 	http.HandleFunc("/api/user/", func(w http.ResponseWriter, r *http.Request) {
