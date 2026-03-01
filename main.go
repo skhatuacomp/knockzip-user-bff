@@ -17,5 +17,5 @@ func main() {
 		fmt.Fprintln(w, "Welcome to Knockzip!")
 	})
 
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe("0.0.0.0:8080", nil)
 }
